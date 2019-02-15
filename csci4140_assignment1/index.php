@@ -1,6 +1,6 @@
 <?php
 
-&db = parse_url(getenv("DATABASE-url"));
+&db = parse_url(getenv("DATABASE-URL"));
 
 $pdo = new PDO("pgsql:" . sprintf("host=%s;port=%s;user=%s;password=%s;dbname=%s",
 	$db["host"],
